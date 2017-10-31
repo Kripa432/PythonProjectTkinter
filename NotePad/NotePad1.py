@@ -40,12 +40,11 @@ label3.pack(side=BOTTOM, expand=NO, fill=X )
 
 #menu bar function'
 def new_file():
-	if tkMessageBox.askokcancel("Save","Do you want to save current file"):
-		
-	root.title("Untitled")
-	global filename
-	filename = None
-	textPad.delete(1.0,END)
+	if tkMessageBox.askokcancel("Save","Do you want to save current file"):	
+		root.title("Untitled")
+		global filename
+		filename = None
+		textPad.delete(1.0,END)
 
 
 def open_file():
